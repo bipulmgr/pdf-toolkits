@@ -47,9 +47,9 @@ npm start              # http://localhost:3000  (PORT env var to change)
 ## Deploy to GitHub Pages
 
 1. Push this repository to GitHub (branch `main`).
-2. In the repo: **Settings → Pages → Source: GitHub Actions**.
-3. The workflow in `.github/workflows/deploy-pages.yml` builds `client/` and
-   publishes it. The site appears at `https://<user>.github.io/<repo>/`.
+2. In the repo: **Settings → Pages → Source: Deploy from a branch → `gh-pages` / `(root)`**.
+3. The workflow in `.github/workflows/deploy-pages.yml` builds `client/` and pushes it to the `gh-pages` branch, which Pages
+   serves. The site appears at `https://<user>.github.io/<repo>/`.
 
 Hash-based routing (`#/merge-pdf`) is used, so deep links work on Pages without
 any 404 redirect tricks.
