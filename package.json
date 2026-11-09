@@ -1,0 +1,13 @@
+{
+  "name": "pdf-toolkit",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Free, private, browser-based PDF tools. Static SPA (GitHub Pages) with an optional NestJS host.",
+  "scripts": {
+    "install:all": "npm --prefix client install && npm --prefix server install",
+    "dev": "npm --prefix client run dev",
+    "build": "npm --prefix client run build && npm --prefix server run build",
+    "start": "npm --prefix server start"
+  }
+}
